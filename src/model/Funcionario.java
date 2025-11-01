@@ -1,6 +1,6 @@
 package model;
 
-public final class Funcionario extends Usuario {
+public final  class Funcionario extends Usuario {
     private String setor;
     private String cargo;
 
