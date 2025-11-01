@@ -1,6 +1,6 @@
 package model;
 
-public class Usuario {
+public abstract class Usuario {
     private int cpf;
     private String nome;
     private String email;
@@ -15,7 +15,7 @@ public class Usuario {
     public String getNome() {
         return nome;
     }
-    public void setNome(String nome) {
+    public final void setNome(String nome) {
         this.nome = nome;
     }
     public String getEmail() {
@@ -50,5 +50,5 @@ public class Usuario {
         this.senha = senha;
         this.status = status;
     }
-    
+    public abstract void cadastrar(); //obrigatória a implementação nas subclasses
 }

@@ -1,6 +1,6 @@
 package model;
 
-public class Funcionario extends Usuario {
+public final class Funcionario extends Usuario {
     private String setor;
     private String cargo;
 
@@ -31,5 +31,9 @@ public class Funcionario extends Usuario {
         this.setor = setor;
         this.cargo = cargo;
     }
+
+    @Override
+    public void cadastrar() {
+        System.out.println("teste cadastro no funcionário");  }
 
 }

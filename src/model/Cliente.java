@@ -1,8 +1,12 @@
 package model;
 
-public class Cliente extends Usuario {
+public final class Cliente extends Usuario {
     private String endereco;
     private String telefone;
+    //sobrescrita de método setNome da classe Usuario
+    public void setNomeCliente(String nome) {
+        super.setNome(nome.toUpperCase());
+    }
 
     public String getEndereco() {
         return endereco;
@@ -30,6 +34,11 @@ public class Cliente extends Usuario {
         super(cpf, nome, email, senha, status);
         this.endereco = endereco;
         this.telefone = telefone;
+    }
+
+    @Override
+    public void cadastrar() {
+        System.out.println("Cliente - método cadastrar"); 
     }
 
 }
