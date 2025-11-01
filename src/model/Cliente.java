@@ -5,7 +5,7 @@ public final class Cliente extends Usuario {
     private String telefone;
     //sobrescrita de método setNome da classe Usuario
     public void setNomeCliente(String nome) {
-        super.setNome(nome.toUpperCase());
+        super.setNome(nome.toUpperCase());//usuario
     }
 
     public String getEndereco() {
